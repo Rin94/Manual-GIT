@@ -22,11 +22,11 @@
     }
     #con{
         background-color: lightgray;
-        margin: 5px;
+        margin: 15px;
         border: dot-dot-dash;
         text-align: center;
         font-family: Arial;
-        font-size: 15 px;
+        font-size: 20 px;
 
 
     }
@@ -36,15 +36,30 @@
 <div class="container">
     <div class="row-cols-auto">
         <h1 >Hola curso en git</h1>
+        <p>Manual de GIT</p>
+        <p>Por <abbr>Jared Daniel Salinas González</abbr></p>
         <div id="con">
-            <p><b>Inicializar repo</b></p>
+            <b>Inicializar repo</b>
+             <br/>
             <code>git init</code>
-             <p><b>Agregar elemento al stagging</b></p>
-            <code>git add nombre </code>
-            <code>git add * </code> Para todos los elementos de un directorio
-            <p><b>Ver el flujo de como estan nuestros documentos </b></p>
-            <code>git status </code>
-
+        </div>
+        <div id="con">
+             <b>Agregar elemento al stagging</b>
+             <br/>
+            <p><code>git add nombre </code></p>
+            <p><code>git add * </code> Para todos los elementos de un directorio</p>
+        </div>
+        <div id="con">
+            <b>Ver el flujo de como estan nuestros documentos </b>
+             <br/>
+            <p><code>git status </code></p>
+            <p><code>git status -s</code> Nos muestra los que estan modificados y faltan</p>
+        </div>
+        <div id="con">
+            <p><b>Ver el log historico de commits</b></p>
+             <br/>
+            <p><code>git log</code></p>
+            <p><code>git log --oneline</code> No los muestra en una linea</p>
         </div>
 
     </div>
