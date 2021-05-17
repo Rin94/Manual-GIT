@@ -22,6 +22,7 @@
         text-align: justify;
         font-family: Arial;
         font-size: large;
+        align-content: flex-end;
     }
 
     b {
@@ -39,17 +40,23 @@
 
     }
 </style>
+<script>
+    window.onload = function(){
+
+    document.getElementById("boton").onclick = function () {
+        location.href = "http://localhost:63342/pruebaGit/index.html";
+    };
+
+}
+</script>
 <div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <input id="boton" class="btn-lg btn btn-block btn-success" type="button" onclick="saludo()" value="Dale ya">
+            <input id="boton" class="form-control btn-lg btn btn-block btn-success" type="button" onclick="saludo()" value="Acceder a comandos básicos">
             <h1>Ramas</h1>
             <p>La primera rama es la master</p>
             <p>Se pueden dividir cosas a partir de ramas</p>
             <p>Fusionar las dos ramas en una al finalizar</p>
-        </div>
-
-    </div>
+</div>
+<div class="container">
     <div class="row">
         <div class="col-6">
             <hr>
