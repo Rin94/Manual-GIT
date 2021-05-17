@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Ramas</title>
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="js/bootstrap.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.js"></script>
     <script src="js/saludo.js"></script>
 </head>
 <body>
 <style>
-  body{
-       text-align: justify;
+    body {
+        text-align: justify;
         font-family: Arial;
-        font-size:large;
-  }
-    b{
+        font-size: large;
+    }
+
+    b {
         text-align: left;
     }
-    #con{
+
+    #con {
         background-color: lightgray;
         margin: 15px;
         border: dot-dot-dash;
         text-align: center;
         font-family: Arial;
-        font-size:large;
+        font-size: large;
 
 
     }
@@ -40,38 +42,43 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
-             <input id="boton" class="btn-lg btn btn-block btn-success" type="button" onclick="saludo()" value="Dale ya">
-                   <h1>Ramas</h1>
-      <p>La primera rama es la master</p>
-      <p>Se pueden dividir cosas a partir de ramas</p>
-      <p>Fusionar las dos ramas en una al finalizar</p>
+            <input id="boton" class="btn-lg btn btn-block btn-success" type="button" onclick="saludo()" value="Dale ya">
+            <h1>Ramas</h1>
+            <p>La primera rama es la master</p>
+            <p>Se pueden dividir cosas a partir de ramas</p>
+            <p>Fusionar las dos ramas en una al finalizar</p>
         </div>
 
     </div>
     <div class="row">
         <div class="col-6">
-      <hr>
-      <h2>Crear ramas</h2>
-      <p><code>git branch nombreRama</code></p>
-        <hr>
-      <h2>Ver ramas</h2>
-        <p>Despliega lista de ramas y pone en * la <a style="color: green" href="#">rama</a> que estamos actualmente</p>
-      <p><code>git branch</code></p>
-         <hr>
-      <h2>Movernos de ramas</h2>
-      <p><code>git checkout nombreRama</code></p>
-                 <hr>
-      <h2>Hacer un merge </h2>
-        <p>Movernos a master</p>
-      <p><code>git merge nombreRamaNoMaster</code></p>
+            <hr>
+            <h2>Crear ramas</h2>
+            <p><code>git branch nombreRama</code></p>
+            <hr>
+            <h2>Ver ramas</h2>
+            <p>Despliega lista de ramas y pone en * la <a style="color: green" href="#">rama</a> que estamos actualmente
+            </p>
+            <p><code>git branch</code></p>
+            <hr>
+            <h2>Movernos de ramas</h2>
+            <p><code>git checkout nombreRama</code></p>
+            <hr>
+            <h2>Hacer un merge </h2>
+            <p>Movernos a master</p>
+            <p><code>git merge nombreRamaNoMaster</code></p>
         </div>
         <div class="col-6" style="text-align: right">
             <hr/>
-        <h2>Hacer push a otra rama</h2>
+            <h2>Hacer push a otra rama</h2>
             <p><code>git push --set-upstream origin nombreRama</code></p>
-        <h2>Hola mundo</h2>
+            <h2>Hola mundo</h2>
             <code>print("Hola mundo")</code>
-    </div>
+            <hr>
+            <h2>Borrar una rama </h2>
+            <code>git branch -d nombreRama</code>
+
+        </div>
 
     </div>
 
