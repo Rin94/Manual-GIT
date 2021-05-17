@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Ramas</title>
   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,7 +13,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
     <script src="js/saludo.js"></script>
 </head>
 <body>
@@ -38,13 +38,18 @@
     }
 </style>
 <div class="container">
-    <div class="row-cols-auto">
-        <input id="boton" class="btn-lg btn btn-block btn-success" type="button" onclick="saludo()" value="Dale ya">
-      <h1>Ramas</h1>
+    <div class="row">
+        <div class="col-lg-12">
+             <input id="boton" class="btn-lg btn btn-block btn-success" type="button" onclick="saludo()" value="Dale ya">
+                   <h1>Ramas</h1>
       <p>La primera rama es la master</p>
       <p>Se pueden dividir cosas a partir de ramas</p>
       <p>Fusionar las dos ramas en una al finalizar</p>
+        </div>
 
+    </div>
+    <div class="row">
+        <div class="col-6">
       <hr>
       <h2>Crear ramas</h2>
       <p><code>git branch nombreRama</code></p>
@@ -59,7 +64,14 @@
       <h2>Hacer un merge </h2>
         <p>Movernos a master</p>
       <p><code>git merge nombreRamaNoMaster</code></p>
+        </div>
+        <div class="col-6" style="text-align: right">
+            <hr/>
+        <h2>Hola mundo</h2>
     </div>
+
+    </div>
+
 
 </div>
 
