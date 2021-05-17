@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ramas</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/saludo.js"></script>
+</head>
+<body>
+<style>
+    body {
+        text-align: justify;
+        font-family: Arial;
+        font-size: large;
+        align-content: flex-end;
+    }
+
+    b {
+        text-align: left;
+    }
+    code{
+        font-family:"Apple Color Emoji";
+        font-size: large;
+        text-align: center;
+    }
+
+    #con {
+        background-color: lightgray;
+        margin: 15px;
+        border: dot-dot-dash;
+        text-align: center;
+        font-family: Arial;
+        font-size: large;
+
+
+    }
+</style>
+<script>
+    window.onload = function(){
+
+    document.getElementById("boton").onclick = function () {
+        location.href = "http://localhost:63342/pruebaGit/index.html";
+    };
+
+}
+</script>
+<div class="container">
+            <input id="boton" class="form-control btn-lg btn btn-block btn-success" type="button" onclick="saludo()" value="Acceder a comandos básicos">
+            <h1>Fork</h1>
+  <ul class="list-group list-group">
+  <li class="list-group-item">Copia identica del proyecto desde GITHUB</li>
+  <li class="list-group-item">Para que después se clone en el local de la persona</li>
+  <li class="list-group-item">Se puede usar como la base de un proyecto nuevo</li>
+      <li class="list-group-item">Puedes contribuir en un proyecto</li>
+      <li class="list-group-item">PULL REQUEST decirle al programador que vea las modificaciones del proyecto</li>
+      <li class="list-group-item">Ya después hacer merge</li>
+</ul>
+    <h1><code>git fork</code></h1>
+
+</div>
+
+
+
+</body>
+</html>
